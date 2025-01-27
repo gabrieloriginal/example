@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuevana - Películas y Series</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f1f1f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0055A4;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #fff;
+        }
+        header p {
+            font-size: 18px;
+            color: #ddd;
+        }
+        nav {
+            background-color: #004080;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .movie-card, .serie-card {
+            background-color: #333;
+            margin: 15px;
+            width: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .movie-card:hover, .serie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-card img, .serie-card img {
+            width: 100%;
+            height: 375px;
+            object-fit: cover;
+        }
+        .title {
+            padding: 10px;
+            text-align: center;
+            background-color: #444;
+            font-size: 20px;
+        }
+        .seasons {
+            background-color: #222;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        .season {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+        .episode {
+            margin-left: 20px;
+            color: #aaa;
+        }
+        .btn-watch {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #0055A4;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+        .btn-watch:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cuevana</h1>
+        <p>Disfruta de tus películas y series favoritas</p>
+    </header>
+
+    <nav>
+        <a href="#">Películas</a>
+        <a href="#">Series</a>
+        <a href="#">Novedades</a>
+        <a href="#">Más Vistos</a>
+    </nav>
+
+    <div class="content" id="contenedor"></div>
+
+    <script>
+        // URL raw del archivo JSON en GitHub
+        const url = "https://raw.githubusercontent.com/TuUsuario/TuRepositorio/main/contenido.json";
+
+        // Función para cargar el contenido (películas y series)
+        function cargarContenido() {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const contenedor = document.getElementById("contenedor");
+
+                    // Mostrar películas
+                    data.peliculas.forEach(pelicula => {
+                        const movieCard = document.createElement("div");
+                        movieCard.classList.add("movie-card");
+                        movieCard.innerHTML = `
+                            <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
+                            <div class="title">${pelicula.titulo}</div>
+                            <p>${pelicula.descripcion}</p>
+                            <p>Duración: ${pelicula.duracion} minutos</p>
+                            <a href="${pelicula.enlace}" class="btn-watch" target="_blank">Ver Película</a>
+                        `;
+                        contenedor.appendChild(movieCard);
+                    });
+
+                    // Mostrar series
+                    data.series.forEach(serie => {
+                        const serieCard = document.createElement("div");
+                        serieCard.classList.add("serie-card");
+                        serieCard.innerHTML = `
+                            <img src="${serie.imagen}" alt="${serie.titulo}">
+                            <div class="title">${serie.titulo}</div>
+                            <div class="seasons" id="serie-${serie.titulo.replace(/\s/g, '')}-seasons"></div>
+                        `;
+                        contenedor.appendChild(serieCard);
+
+                        // Mostrar temporadas y episodios de la serie
+                        const serieSeasons = document.getElementById(`serie-${serie.titulo.replace(/\s/g, '')}-seasons`);
+                        serie.temporadas.forEach(temporada => {
+                            const temporadaDiv = document.createElement("div");
+                            temporadaDiv.classList.add("season");
+                            temporadaDiv.innerHTML = `<strong>Temporada ${temporada.numero}</strong>`;
+                            
+                            temporada.capitulos.forEach(episodio => {
+                                const episodioDiv = document.createElement("div");
+                                episodioDiv.classList.add("episode");
+                                episodioDiv.innerHTML = `
+                                    ${episodio.titulo} - Duración: ${episodio.duracion} minutos
+                                    <br>
+                                    <a href="${episodio.enlace}" class="btn-watch" target="_blank">Ver Episodio</a>
+                                `;
+                                temporadaDiv.appendChild(episodioDiv);
+                            });
+
+                            serieSeasons.appendChild(temporadaDiv);
+                        });
+                    });
+                })
+                .catch(error => console.error("Error al cargar los datos de la serie:", error));
+        }
+
+        // Cargar los datos al cargar la página
+        window.onload = cargarContenido;
+    </script>
+</body>
+</html>
