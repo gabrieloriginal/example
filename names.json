@@ -1,0 +1,64 @@
+{
+  "peliculas": [
+    {
+      "titulo": "Película 1",
+      "imagen": "https://via.placeholder.com/250x375",
+      "descripcion": "Descripción de la película 1.",
+      "duracion": 120,
+      "enlace": "https://linkdelvideo.com/pelicula1"
+    },
+    {
+      "titulo": "Película 2",
+      "imagen": "https://via.placeholder.com/250x375",
+      "descripcion": "Descripción de la película 2.",
+      "duracion": 95,
+      "enlace": "https://linkdelvideo.com/pelicula2"
+    }
+  ],
+  "series": [
+    {
+      "titulo": "Serie 1",
+      "imagen": "https://via.placeholder.com/250x375",
+      "enlace": "https://linkdelvideo.com/serie1",
+      "temporadas": [
+        {
+          "numero": 1,
+          "capitulos": [
+            {
+              "titulo": "Episodio 1 - El inicio",
+              "duracion": 45,
+              "enlace": "https://linkdelvideo.com/episodio1"
+            },
+            {
+              "titulo": "Episodio 2 - La conspiración",
+              "duracion": 50,
+              "enlace": "https://linkdelvideo.com/episodio2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Serie 2",
+      "imagen": "https://via.placeholder.com/250x375",
+      "enlace": "https://linkdelvideo.com/serie2",
+      "temporadas": [
+        {
+          "numero": 1,
+          "capitulos": [
+            {
+              "titulo": "Episodio 1 - El comienzo",
+              "duracion": 42,
+              "enlace": "https://linkdelvideo.com/episodio1"
+            },
+            {
+              "titulo": "Episodio 2 - La venganza",
+              "duracion": 47,
+              "enlace": "https://linkdelvideo.com/episodio2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
