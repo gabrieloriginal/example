@@ -190,6 +190,68 @@
       ]
     },
     {
+      "titulo": "El juego del calamar: El desafío",
+      "imagen": "https://www.lavanguardia.com/peliculas-series/images/serie/poster/2023/11/w1280/AvOcYB2lcqRFvhq3ybJlcXgpRRu.jpg",
+      "enlace": "https://linkdelvideo.com/serie1",
+      "temporadas": [
+        {
+          "numero": 1,
+          "capitulos": [
+            {
+              "titulo": "Episodio 1 - Luz roja, luz verde",
+              "duracion": 57,
+              "enlace": "https://xupalace.org/video/tt28104766-1x01/"
+            },
+            {
+              "titulo": "Episodio 2 - El hombre del paraguas",
+              "duracion": 56,
+              "enlace": "https://xupalace.org/video/tt28104766-1x02/"
+            },
+            {
+              "titulo": "Episodio 3 - Guerra",
+              "duracion": 56,
+              "enlace": "https://xupalace.org/video/tt28104766-1x03/"
+            },
+            {
+              "titulo": "Episodio 4 - Sin escapatoria",
+              "duracion": 46,
+              "enlace": "https://xupalace.org/video/tt28104766-1x04/"
+            },
+            {
+              "titulo": "Episodio 5 - Dulce o truco",
+              "duracion": 41,
+              "enlace": "https://xupalace.org/video/tt28104766-1x05/"
+            },
+            {
+              "titulo": "Episodio 6 - Adiós",
+              "duracion": 55,
+              "enlace": "https://xupalace.org/video/tt28104766-1x06/"
+            },
+            {
+              "titulo": "Episodio 7 - Amigos y enemigos",
+              "duracion": 40,
+              "enlace": "https://xupalace.org/video/tt28104766-1x07/"
+            },
+            {
+              "titulo": "Episodio 8 - Un paso más",
+              "duracion": 47,
+              "enlace": "https://xupalace.org/video/tt28104766-1x08/"
+            },
+            {
+              "titulo": "Episodio 9 - Círculo de confianza",
+              "duracion": 48,
+              "enlace": "https://xupalace.org/video/tt28104766-1x09/"
+            },
+            {
+              "titulo": "Episodio 10 - Un día de suerte",
+              "duracion": 44,
+              "enlace": "https://xupalace.org/video/tt28104766-1x10/"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "titulo": "Serie 2",
       "imagen": "https://via.placeholder.com/250x375",
       "enlace": "https://linkdelvideo.com/serie2",
