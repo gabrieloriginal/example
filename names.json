@@ -122,6 +122,66 @@
       ]
     },
     {
+      "titulo": "Beast Games",
+      "imagen": "https://upload.wikimedia.org/wikipedia/en/8/86/Beast_Games_Poster.jpeg",
+      "enlace": "https://linkdelvideo.com/serie1",
+      "temporadas": [
+        {
+          "numero": 1,
+          "capitulos": [
+            {
+              "titulo": "Episodio 1 - 1,000 Personas Pelean Por $5,000,000",
+              "duracion": 39,
+              "enlace": "https://goodstream.one/video/embed/cjxyt7wo177q"
+            },
+            {
+              "titulo": "Episodio 2 - 500 Personas Atrapadas En Mi Ciudad",
+              "duracion": 47,
+              "enlace": "https://goodstream.one/video/embed/909ktvhdreqw"
+            },
+            {
+              "titulo": "Episodio 3 - El Experimento De Aislamiento",
+              "duracion": 43,
+              "enlace": "https://goodstream.one/video/embed/jp4g207rdkbj"
+            },
+            {
+              "titulo": "Episodio 4 - El Boleto Dorado",
+              "duracion": 52,
+              "enlace": "https://goodstream.one/video/embed/0vocb0ojhxju"
+            },
+            {
+              "titulo": "Episodio 5 - Pelea Para Ganar Una Isla Privada",
+              "duracion": 60,
+              "enlace": "https://goodstream.one/video/embed/qwqi9e0p1p7q"
+            },
+            {
+              "titulo": "Episodio 6 - Físico, Mental, Al Azar... Tú Eliges",
+              "duracion": 56,
+              "enlace": "https://goodstream.one/video/embed/iilaufo0vu7y"
+            },
+            {
+              "titulo": "Episodio 7 - El Tren de Eliminación",
+              "duracion": 58,
+              "enlace": "https://goodstream.one/video/embed/5vk1bve7h6rt"
+            },
+            {
+              "titulo": "Episodio 8 - ",
+              "duracion": 0,
+              "enlace": ""
+            },
+            {
+              "titulo": "Episodio 9 - ",
+              "duracion": 0,
+              "enlace": ""
+            },
+            {
+              "titulo": "Episodio 10 - ",
+              "duracion": 0,
+              "enlace": ""
+            }
+          ]
+        },
+    {
       "titulo": "Serie 2",
       "imagen": "https://via.placeholder.com/250x375",
       "enlace": "https://linkdelvideo.com/serie2",
