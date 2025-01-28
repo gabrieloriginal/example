@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuevana - Disfruta de tus películas y series favoritas de manera fácil y rápida. Encuentra las últimas novedades, lo más visto y mucho más.">
     <title>Cuevana - Películas y Series</title>
     <style>
         body {
@@ -99,6 +100,13 @@
         .btn-watch:hover {
             background-color: #004080;
         }
+        .movie-description {
+            padding: 10px;
+            background-color: #222;
+            color: #ddd;
+            font-size: 16px;
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
@@ -134,7 +142,7 @@
                         movieCard.innerHTML = `
                             <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                             <div class="title">${pelicula.titulo}</div>
-                            <p>${pelicula.descripcion}</p>
+                            <p class="movie-description">${pelicula.descripcion}</p>
                             <p>Duración: ${pelicula.duracion} minutos</p>
                             <a href="${pelicula.enlace}" class="btn-watch" target="_blank">Ver Película</a>
                         `;
