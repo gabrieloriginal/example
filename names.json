@@ -20,59 +20,101 @@
       "titulo": "El juego del calamar",
       "imagen": "https://seeklogo.com/images/E/el-juego-del-calamar-logo-1B4FBE27A2-seeklogo.com.png",
       "enlace": "https://linkdelvideo.com/serie1",
-      "temporadas": [
+      {
+  "temporadas": [
+    {
+      "numero": 1,
+      "capitulos": [
         {
-          "numero": 1,
-          "capitulos": [
-            {
-              "titulo": "Episodio 1 - Luz Roja, Luz Verde",
-              "duracion": 59,
-              "enlace": "https://goodstream.one/video/embed/e8g168i0xs27"
-            },
-            {
-              "titulo": "Episodio 2 - Infierno",
-              "duracion": 50,
-              "enlace": "https://linkdelvideo.com/episodio2"
-            },
-            {
-              "titulo": "Episodio 3 - El hombre del paraguas",
-              "duracion": 50,
-              "enlace": "https://linkdelvideo.com/episodio2"
-            },
-            {
-              "titulo": "Episodio 4 - Quédate con el equipo",
-              "duracion": 50,
-              "enlace": "https://linkdelvideo.com/episodio2"
-            },
-            {
-              "titulo": "Episodio 5 - Un mundo justo",
-              "duracion": 50,
-              "enlace": "https://linkdelvideo.com/episodio2"
-            },
-            {
-              "titulo": "Episodio 6 - Gganbu",
-              "duracion": 50,
-              "enlace": "https://linkdelvideo.com/episodio2"
-            },
-            {
-              "titulo": "Episodio 7 - VIPS",
-              "duracion": 50,
-              "enlace": "https://linkdelvideo.com/episodio2"
-            },
-            {
-              "titulo": "Episodio 8 - El líder",
-              "duracion": 50,
-              "enlace": "https://linkdelvideo.com/episodio2"
-            },
-            {
-              "titulo": "Episodio 9 -  Un día de suerte",
-              "duracion": 50,
-              "enlace": "https://linkdelvideo.com/episodio2"
-            }
-          ]
+          "titulo": "Episodio 1 - Luz Roja, Luz Verde",
+          "duracion": 59,
+          "enlace": "https://goodstream.one/video/embed/e8g168i0xs27"
+        },
+        {
+          "titulo": "Episodio 2 - Infierno",
+          "duracion": 62,
+          "enlace": "https://linkdelvideo.com/episodio2"
+        },
+        {
+          "titulo": "Episodio 3 - El hombre del paraguas",
+          "duracion": 54,
+          "enlace": "https://linkdelvideo.com/episodio2"
+        },
+        {
+          "titulo": "Episodio 4 - Quédate con el equipo",
+          "duracion": 54,
+          "enlace": "https://linkdelvideo.com/episodio2"
+        },
+        {
+          "titulo": "Episodio 5 - Un mundo justo",
+          "duracion": 51,
+          "enlace": "https://linkdelvideo.com/episodio2"
+        },
+        {
+          "titulo": "Episodio 6 - Gganbu",
+          "duracion": 61,
+          "enlace": "https://linkdelvideo.com/episodio2"
+        },
+        {
+          "titulo": "Episodio 7 - VIPS",
+          "duracion": 57,
+          "enlace": "https://linkdelvideo.com/episodio2"
+        },
+        {
+          "titulo": "Episodio 8 - El líder",
+          "duracion": 32,
+          "enlace": "https://linkdelvideo.com/episodio2"
+        },
+        {
+          "titulo": "Episodio 9 - Un día de suerte",
+          "duracion": 55,
+          "enlace": "https://linkdelvideo.com/episodio2"
         }
       ]
     },
+    {
+      "numero": 2,
+      "capitulos": [
+        {
+          "titulo": "Episodio 1 - Pan y Lotería",
+          "duracion": 65,
+          "enlace": "https://linkdelvideo.com/episodio1"
+        },
+        {
+          "titulo": "Episodio 2 - Fiesta de Halloween",
+          "duracion": 51,
+          "enlace": "https://linkdelvideo.com/episodio2"
+        },
+        {
+          "titulo": "Episodio 3 - 001",
+          "duracion": 61,
+          "enlace": "https://linkdelvideo.com/episodio3"
+        },
+        {
+          "titulo": "Episodio 4 - Seis piernas",
+          "duracion": 62,
+          "enlace": "https://linkdelvideo.com/episodio4"
+        },
+        {
+          "titulo": "Episodio 5 - Un juego más",
+          "duracion": 76,
+          "enlace": "https://linkdelvideo.com/episodio5"
+        },
+        {
+          "titulo": "Episodio 6 - O X",
+          "duracion": 52,
+          "enlace": "https://linkdelvideo.com/episodio6"
+        },
+        {
+          "titulo": "Episodio 7 - Amigo o enemigo",
+          "duracion": 60,
+          "enlace": "https://linkdelvideo.com/episodio7"
+        }
+      ]
+    }
+  ]
+},
+
     {
       "titulo": "Serie 2",
       "imagen": "https://via.placeholder.com/250x375",
